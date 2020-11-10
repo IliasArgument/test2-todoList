@@ -11,3 +11,107 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1300px;
+  max-height: 1500px;
+  background: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  margin: 40px 0 0 100px;
+  font-weight: 900;
+}
+
+.input {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  width: 60%;
+  height: 30px;
+}
+
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 100%;
+  padding-top: 10px;
+
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 100px 50px 50px 40px;
+}
+
+.search_inp {
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
+
+.todo {
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+
+.todo.completed span {
+  text-decoration: line-through;
+}
+
+.todo label {
+  min-width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.todo i {
+  z-index: 2;
+}
+
+@media screen and (max-width: 750px) {
+
+  .todo label {
+    min-width: 400px;
+
+
+  }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .todo label {
+    min-width: 300px;
+
+
+  }
+
+
+}
